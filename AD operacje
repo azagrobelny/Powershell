@@ -4,6 +4,6 @@ Get-ADGroup -Identity "XYZ"
 
 Wyświetlanie właściwości danego komputera
 ##########################################
-Get-ADComputer -Identity XYZ
+Get-ADComputer -Identity nazwa_pc -Properties *
 
 
