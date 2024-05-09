@@ -1,5 +1,0 @@
-Wyświetlenie właściwości danej grupy
-
-PS H:\> Get-ADGroup -Identity "XYZ"
-
-https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-adgroup?view=windowsserver2022-ps
