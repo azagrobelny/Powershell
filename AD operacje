@@ -1,9 +1,15 @@
-Wyświetlenie właściwości danej grupy
-##########################################
+Operacja na grupie:
+-------------------------------------
+# Wyświetlenie zawartości danej grupy
+Get-ADGroupMember -Identity "NazwaGrupy" | Select-Object Name
+
+# Wyświetlenie właściwości danej grupy
 Get-ADGroup -Identity "XYZ"
 
-Wyświetlanie właściwości danego komputera
-##########################################
+
+Operacja na obiektach:
+-------------------------------------
+# Wyświetlanie właściwości danego komputera
 Get-ADComputer -Identity nazwa_pc -Properties *
 
 
