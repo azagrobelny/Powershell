@@ -1,15 +1,18 @@
-# Sprawdzenie statusu konta komputera w AD
+### Sprawdzenie statusu konta komputera w AD
 Get-ADComputer -Identity "NazwaKomputera" -Properties Enabled | Select-Object Name, Enabled
   
   - Jeśli Enabled = False, konto jest wyłączone.
   - Jeśli Enabled = True, konto jest aktywne.
 
 
-# Sprawdzenie daty ostatniego logowania:
+### Sprawdzenie daty ostatniego logowania:
 Get-ADComputer -Identity "NazwaKomputera" -Properties LastLogonDate | Select-Object Name, LastLogonDate
 
-# Sprawdzenie daty utworzenia konta:
+### Sprawdzenie daty utworzenia konta:
 Get-ADComputer -Identity "NazwaKomputera" -Properties whenCreated | Select-Object Name, whenCreated
 
-# Wyświetlanie pełnych właściwości danego komputera
+### Wyświetlanie pełnych właściwości danego komputera
 Get-ADComputer -Identity "NazwaKomputera" -Properties *
+
+### Włączenie konta komputera 
+Set-ADComputer -Identity "NazwaKomputera" -Enabled $true
