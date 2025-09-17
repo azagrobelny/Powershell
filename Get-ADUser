@@ -1,0 +1,2 @@
+# Czy konto jest zablokowane (LockedOut)?
+Get-ADUser -Identity "NazwaUzytkownika" -Properties LockedOut | Select-Object Name, LockedOut
