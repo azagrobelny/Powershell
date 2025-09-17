@@ -6,3 +6,6 @@ Get-ADComputer -Identity "NazwaKomputera" -Properties LastLogonDate | Select-Obj
 
 # Sprawdzenie daty utworzenia konta:
 Get-ADComputer -Identity "NazwaKomputera" -Properties whenCreated | Select-Object Name, whenCreated
+
+# Wyświetlanie pełnych właściwości danego komputera
+Get-ADComputer -Identity "NazwaKomputera" -Properties *
